@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="img-container">
+      <div class="bgImage">
+        <img src="./assets/leaf_signupform_odin.jpg" alt="leaf background image" width="450px" height="100%">
+      </div>
+      <div class="logo">
+        <img src="./assets/odin-lined.png" alt="odin Logo" height="120px" width="100px">
+        <span>ODIN</span>
+      </div>
+    </div>
+    <div class="form_layout">
+      <header>
+        <div class="intro">
+          <p>This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams.</p>
+          <p>Sign Up <i>now</i> to get started.</p>
+          <br />
+          <p>You <i>Know</i> you want to.</p>
+        </div>
+      </header>
+
+      <form action="">
+        <main>
+          <div class="heading">
+            <h3>Let's do this!</h3>
+          </div>
+
+          <div class="form-container">
+            <div class="form-columns">
+              <div class="form-col">
+                <label for="first_name">FIRST NAME*</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Robert" required>
+                <br>
+
+                <label for="email">EMAIL*</label>
+                <input type="email" name="email_id" id="email" placeholder="robertgreen@gmail.com" required>
+                <br>
+
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$
+                " required
+                  title="Password must be at least 8 characters long and contain at least one uppercase letter and one special character.">
+
+              </div>
+
+
+              <div class="form-col">
+                <label for="last_name">LAST NAME*</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Green" required>
+                <br>
+
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input type="number" name="phoneNumber" id="phoneNumber">
+                <br>
+
+                <label for="confirmPwsd">CONFIRM PASSWORD</label>
+                <input type="password" name="ConfirmedPwsd" id="confirmPwsd" required>
+                <div class="errorMsg"></div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+
+        <footer>
+          <button type="submit" class="submitBtn">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </footer>
+      </form>
+    </div>
+
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
