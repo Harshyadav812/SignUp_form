@@ -10,10 +10,12 @@ function validatePassword() {
 
   if (pwsd !== confirmPwsd) {
     errorMsg.textContent = "Password doesn't match!!"
+    confirmPwsdInput.classList.add("misMatch");
     submitBtn.disabled = true;
   }
   else {
     errorMsg.textContent = '';
+    confirmPwsdInput.classList.remove("misMatch");
     submitBtn.disabled = false;
   }
 }
