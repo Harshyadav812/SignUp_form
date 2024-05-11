@@ -110,9 +110,30 @@ input {
   width: 280px;
   border-radius: 4px;
   background-color: #f7f7f7;
-  border: 1px solid #ccc;
+  border: 1px solid #e5e7eb;
   font-family: sans-serif;
   font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #add8e6;
+  box-shadow: 0 0 0 2px #a6e4f9;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input#password:valid {
+  border-color: #e5e7eb;
+}
+
+input#password:invalid:focus {
+  box-shadow: none;
+  border-color: rgb(230, 35, 35);
+}
+
+input#confirmPwsd.misMatch {
+  border-color: rgb(230, 35, 35);
+  box-shadow: none;
 }
 
 .errorMsg {
@@ -134,7 +155,7 @@ button {
   height: 50px;
   font-size: larger;
   border-radius: 8px;
-  background-color: rgb(90, 120, 31);
+  background-color: #596d48;
   color: whitesmoke;
   border-style: none;
   cursor: pointer;
@@ -146,5 +167,5 @@ footer p {
 }
 
 footer p > a {
-  color: rgb(90, 120, 31);
+  color: #596d48;
 }
